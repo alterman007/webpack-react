@@ -1,10 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 // import { AppContainer } from 'react-hot-loader';
-import App from './app';
+import App from './views/app';
 
 ReactDOM.hydrate(
-  <App />,
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
   document.querySelector('#app'),
 );
 
